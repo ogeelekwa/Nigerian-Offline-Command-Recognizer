@@ -25,16 +25,3 @@ This project demonstrates an offline speech recognition pipeline designed for lo
 | Quantization | INT8 (quantization-aware training) |
 | Android | Android Studio + TFLite Interpreter |
 | Languages | Igbo, Hausa, Yoruba (low-resource African languages) |
-
-## Project Structure
-offline-nigerian-voice-command/
-├── training/ # Model training scripts
-│ ├── train_nigerian_commands.py # Fine-tune wav2vec2 for commands
-│ ├── preprocessing.py # Audio preprocessing pipeline
-│ └── convert_to_tflite.py # Export to TFLite
-├── app/ # Android app
-│ ├── MainActivity.java # UI + recording
-│ ├── VoiceCommandRecognizer.java # TFLite inference
-│ └── AudioPreprocessor.java # Audio processing
-└── evaluation/ # Evaluation metrics
-└── evaluate_commands.py # Per-command accuracy
